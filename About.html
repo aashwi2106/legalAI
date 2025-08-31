@@ -8,101 +8,149 @@
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <style type="text/tailwindcss">
       :root {
-        --primary-color: #38e07b;
+        --primary-50: #f0fdf6;
+        --primary-100: #dffcee;
+        --primary-200: #c1f7de;
+        --primary-300: #8ef0c1;
+        --primary-400: #57e6a0;
+        --primary-500: #38e07b;
+        --primary-600: #26c063;
+        --primary-700: #1e964e;
+        --primary-800: #1a7641;
+        --primary-900: #165e35;
+        --primary-950: #0d381f;
       }
     </style>
 </head>
-<body>
-<div class="relative flex size-full min-h-screen flex-col bg-[#111714] dark group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<body class="bg-[#111714]">
+<div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
 <div class="layout-container flex h-full grow flex-col">
-<header class="flex items-center justify-between p-4 px-10">
-<div class="flex items-center gap-2">
-<svg class="h-8 w-8 text-[var(--primary-color)]" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.311a7.5 7.5 0 0 1-7.5 0c-1.421-.622-2.735-1.488-3.882-2.553a12.023 12.023 0 0 1-2.45-6.314AW12.023 12.023 0 0 1 5.03 5.372a12.023 12.023 0 0 1 6.314-2.45 12.023 12.023 0 0 1 6.314 2.45 12.023 12.023 0 0 1 2.45 6.314c.036.96-.064 1.91-.252 2.812a7.487 7.487 0 0 1-2.034 3.535 7.487 7.487 0 0 1-3.535 2.034 7.487 7.487 0 0 1-2.812.252A7.487 7.487 0 0 1 9 17.068a7.487 7.487 0 0 1-2.034-3.535A7.487 7.487 0 0 1 5.03 9.948" stroke-linecap="round" stroke-linejoin="round"></path>
-</svg>
-<span class="text-xl font-bold text-white">LexiClear</span>
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#29382f] px-10 py-3 sticky top-0 bg-[#111714]/80 backdrop-blur-sm z-50">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary-500">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z" fill="currentColor"></path></svg>
 </div>
-<nav class="hidden md:flex items-center gap-6 text-white">
-<a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Features</a>
-<a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Contact</a>
+<h2 class="text-white text-xl font-bold leading-tight tracking-[-0.015em]">LexiGen</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="flex items-center gap-9">
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Product</a>
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Solutions</a>
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Pricing</a>
+<a class="text-white/80 hover:text-white transition-colors text-sm font-medium leading-normal" href="#">Resources</a>
 </nav>
-<button class="hidden md:flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-transparent border border-[var(--primary-color)] text-[var(--primary-color)] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[var(--primary-color)] hover:text-[#111714] transition-colors">
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-primary-500 text-[#111714] text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary-600 transition-colors">
 <span class="truncate">Get Started</span>
 </button>
-<button class="md:hidden text-white">
-<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
-</svg>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-[#29382f] text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-[#34453a] transition-colors">
+<span class="truncate">Contact Sales</span>
 </button>
+</div>
+</div>
 </header>
-<main class="flex flex-1 flex-col">
-<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-10 md:py-20">
-<div class="layout-content-container flex flex-col max-w-[960px] flex-1 items-center text-center">
-<div class="flex flex-col gap-6 items-center">
-<h1 class="text-white text-4xl md:text-6xl font-black leading-tight tracking-tighter">Unlock Legal Clarity</h1>
-<p class="text-white/80 text-base md:text-lg max-w-2xl">
-                  Our AI-powered solution transforms complex legal documents into simple, understandable language, empowering you to make informed decisions with confidence.
+<main class="px-40 flex flex-1 justify-center py-16 sm:py-24">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<section class="w-full" id="about">
+<div class="text-center mb-12">
+<h1 class="text-white text-5xl md:text-6xl font-bold leading-tight tracking-tighter">Simplifying the Complex</h1>
+<p class="text-[#9eb7a8] text-lg md:text-xl max-w-3xl mx-auto mt-4">
+                  We're a team of legal and tech experts dedicated to making legal documents accessible to everyone. Discover our mission and the people making it happen.
                 </p>
-<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[var(--primary-color)] text-[#111714] text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity shadow-lg shadow-[var(--primary-color)]/20">
-<span class="truncate">Analyze Document</span>
-</button>
 </div>
-<div class="w-full max-w-4xl mt-16 md:mt-24 rounded-2xl bg-gradient-to-tr from-[#1c2620] to-[#111714] p-1 shadow-2xl shadow-black/50">
-<div class="w-full h-full rounded-[14px] bg-cover bg-center bg-no-repeat p-4 sm:p-8" style='background-image: linear-gradient(rgba(17, 23, 20, 0.95) 0%, rgba(17, 23, 20, 0.8) 50%, rgba(17, 23, 20, 0.95) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBKzTXdf4Oa3KCQrQM9hEoo1ESh9vmSGEvhP_576qv15jXcDovE-aH3ETVCXTpk4vNc1LODRt7SOTxeBrnchNHXNNW3sXPXLS6l-BNErbJxzvwDxxbN_XCH_SxAExazU26dW77FvFkTKqAu1Y16uvqd57dOyR5Hi30lOajoVAv0z_AKKHnOQGOgTzuXm2MeC2EXbuKeRpm-7yk9rFonQPfMGugFwOZw-mvYRekseTi4nAqBih-qHmyVd2UxKP3RNMyZeVd71dPn9A");'>
-<div class="flex flex-col items-center justify-center min-h-[300px] md:min-h-[400px]">
-<div class="text-white p-4 rounded-full bg-black/20 backdrop-blur-sm">
-<svg class="text-[var(--primary-color)]" fill="currentColor" height="48px" viewBox="0 0 256 256" width="48px" xmlns="http://www.w3.org/2000/svg">
-<path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"></path>
+<div class="mb-16">
+<h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 text-center">Our Mission</h2>
+<p class="text-white/90 text-lg font-normal leading-relaxed pb-3 pt-1 px-4 text-center max-w-4xl mx-auto">
+                  At LexiGen, our mission is to make legal information accessible and understandable for everyone. We believe that complex legal documents shouldn't be a barrier to
+                  informed decision-making. Our AI-powered solution simplifies legal language, empowering individuals and businesses to navigate legal matters with confidence.
+                </p>
+</div>
+<div class="mb-16">
+<h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em] px-4 pb-8 pt-5 text-center">Meet the Team</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 p-4">
+<div class="flex flex-col gap-4 items-center text-center">
+<div class="relative w-40 h-40">
+<div class="w-full h-full bg-center bg-no-repeat aspect-square bg-cover rounded-full border-4 border-primary-500/50" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuApLoOOrpTsRcufc_S928r3hwj213nEjKduWiAqM7eAiKF-E6zAEP38OgysCzmE9kJyaAZKGZW52-2mm64nTucdSKlljhcuHXbDcSRej2vCCWnbhFOXLkhaX-HwMQpkv9HCbWk69JKmg7BmgIn5SHoAsMNWag2gBUco6sBbMeD2n9aZjuj_zUBQw4srnhHdx-22rd1h6rc786D4qY3q0OqOBbbHVXhVl4SkJb86G-yjaS91IdQAdUtM3xq-lDE6MtwcwS_RGsGbhw");'></div>
+</div>
+<div>
+<p class="text-white text-xl font-medium leading-normal">Dr. Amelia Stone</p>
+<p class="text-primary-400 text-base font-normal leading-normal">CEO &amp; Co-founder</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 items-center text-center">
+<div class="relative w-40 h-40">
+<div class="w-full h-full bg-center bg-no-repeat aspect-square bg-cover rounded-full border-4 border-primary-500/50" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDG0nROqaqyug90gd_q3VqhRFNHKwE4M_FFhfnc0kEO41npFGhpFBYJw9HnUWwi0QyPzlaI7Ekf0uRQUU0SPzw-yTumU9Ty5IqAUVmiYPeqx9kqb91FUSu5jwstEB0kgnT6FbMe9W_UL1q0_UPpNl3nywq9Sv2TQBEedrS69a8ZmEphG33GWx4gohgmLqxEEnwONQOVXuR9jYPS3i7yQBKC09xFhStcKuEQ9LL97L9FaIDia_YNlRAiXTRzccC_zQwA_baJINvR2g");'></div>
+</div>
+<div>
+<p class="text-white text-xl font-medium leading-normal">Ethan Carter</p>
+<p class="text-primary-400 text-base font-normal leading-normal">CTO &amp; Co-founder</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 items-center text-center">
+<div class="relative w-40 h-40">
+<div class="w-full h-full bg-center bg-no-repeat aspect-square bg-cover rounded-full border-4 border-primary-500/50" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuACTVEw62NvQc4DONFXrJOI-0TF8TE0d_b26HHknX0OlDzvCT8Fw9Y5JQGfHxkW866dcXPjeZ4TGtZlpPCviY-ag55BJDGz0ivwRn867RkRMQodr-PetU4qNgnUme2JiNO6dcY5YqnKcGHYT5cv10dq8kg7G_sJOjh53X61TAQAv0DDgtLNoJaWk7fxlt4Kf0r8eQK9YXoLDVxnlOYN1XdaXPVsS7TMsGWtRFc7ZqoixT07mqWRJAJr_iEms7cQLZQTqNM1pTrroQ");'></div>
+</div>
+<div>
+<p class="text-white text-xl font-medium leading-normal">Olivia Bennett</p>
+<p class="text-primary-400 text-base font-normal leading-normal">Head of Product</p>
+</div>
+</div>
+</div>
+<p class="text-white/90 text-lg font-normal leading-relaxed pb-3 pt-4 px-4 text-center max-w-4xl mx-auto">
+                  Our team comprises experts in artificial intelligence, natural language processing, and legal technology. With decades of combined experience, we're dedicated to
+                  building innovative solutions that bridge the gap between law and technology.
+                </p>
+</div>
+</section>
+<section class="w-full py-16" id="how-it-works">
+<div class="text-center mb-12">
+<h2 class="text-white text-3xl font-bold leading-tight tracking-[-0.015em]">How It Works</h2>
+<p class="text-[#9eb7a8] text-lg md:text-xl max-w-3xl mx-auto mt-4">
+                  LexiGen uses advanced AI algorithms to analyze and simplify legal documents. Our process is transparent, secure, and designed for clarity.
+                </p>
+</div>
+<div class="relative px-4">
+<div class="absolute left-1/2 -translate-x-1/2 top-10 bottom-10 w-0.5 bg-[#29382f]"></div>
+<div class="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-center gap-x-12 gap-y-10">
+<div class="text-right">
+<h3 class="text-white text-2xl font-semibold leading-normal">Document Upload</h3>
+<p class="text-[#9eb7a8] text-base font-normal leading-relaxed mt-2">Simply upload your legal documents in various formats like PDF, DOCX, or TXT. Our platform ensures your data is encrypted and secure.</p>
+</div>
+<div class="flex justify-center items-center relative">
+<div class="w-16 h-16 rounded-full bg-primary-500 text-[#111714] flex items-center justify-center z-10">
+<svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg">
+<path d="M240,136v64a16,16,0,0,1-16,16H32a16,16,0,0,1-16-16V136a16,16,0,0,1,16-16H80a8,8,0,0,1,0,16H32v64H224V136H176a8,8,0,0,1,0-16h48A16,16,0,0,1,240,136ZM85.66,77.66,120,43.31V128a8,8,0,0,0,16,0V43.31l34.34,34.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,77.66Z"></path>
 </svg>
 </div>
-<p class="mt-4 text-white/80">Drag and drop your document here</p>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-[#141b18] py-16 sm:py-24">
-<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-col gap-12">
-<div class="flex flex-col gap-4 text-center">
-<h2 class="text-white text-3xl md:text-4xl font-black tracking-tight">Powerful Features, Simplified</h2>
-<p class="text-white/60 text-base md:text-lg max-w-3xl mx-auto">Experience the power of AI-driven legal simplification with our core features designed for clarity and confidence.</p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-<div class="flex flex-col gap-4 rounded-xl border border-white/10 bg-[#1c2620]/50 p-6 transition-all duration-300 hover:bg-[#1c2620] hover:border-[var(--primary-color)]/30 hover:-translate-y-1">
-<div class="flex items-center justify-center h-12 w-12 rounded-full bg-[var(--primary-color)]/10 text-[var(--primary-color)]">
-<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
-<path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"></path>
-</svg>
-</div>
-<div class="flex flex-col gap-1">
-<h3 class="text-white text-lg font-bold">Instant Summaries</h3>
-<p class="text-white/60 text-sm">Get concise, easy-to-read overviews of lengthy legal documents in a matter of seconds.</p>
-</div>
-</div>
-<div class="flex flex-col gap-4 rounded-xl border border-white/10 bg-[#1c2620]/50 p-6 transition-all duration-300 hover:bg-[#1c2620] hover:border-[var(--primary-color)]/30 hover:-translate-y-1">
-<div class="flex items-center justify-center h-12 w-12 rounded-full bg-[var(--primary-color)]/10 text-[var(--primary-color)]">
-<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<div></div>
+<div></div>
+<div class="flex justify-center items-center relative">
+<div class="w-16 h-16 rounded-full bg-primary-500 text-[#111714] flex items-center justify-center z-10">
+<svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg">
 <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
 </svg>
 </div>
-<div class="flex flex-col gap-1">
-<h3 class="text-white text-lg font-bold">Clause Explanations</h3>
-<p class="text-white/60 text-sm">Understand the intricate meaning and potential implications of individual clauses.</p>
 </div>
+<div>
+<h3 class="text-white text-2xl font-semibold leading-normal">AI Analysis</h3>
+<p class="text-[#9eb7a8] text-base font-normal leading-relaxed mt-2">Our AI identifies key clauses, definitions, and obligations, cross-referencing a vast legal database for accuracy and context.</p>
 </div>
-<div class="flex flex-col gap-4 rounded-xl border border-white/10 bg-[#1c2620]/50 p-6 transition-all duration-300 hover:bg-[#1c2620] hover:border-[var(--primary-color)]/30 hover:-translate-y-1">
-<div class="flex items-center justify-center h-12 w-12 rounded-full bg-[var(--primary-color)]/10 text-[var(--primary-color)]">
-<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
-<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm45.66,85.66-56,56a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L112,148.69l50.34-50.35a8,8,0,0,1,11.32,11.32Z"></path>
+<div class="text-right">
+<h3 class="text-white text-2xl font-semibold leading-normal">Simplified Output</h3>
+<p class="text-[#9eb7a8] text-base font-normal leading-relaxed mt-2">LexiGen generates a clear, concise summary with plain language explanations, highlighting potential risks and areas of concern.</p>
+</div>
+<div class="flex justify-center items-center relative">
+<div class="w-16 h-16 rounded-full bg-primary-500 text-[#111714] flex items-center justify-center z-10">
+<svg fill="currentColor" height="32px" viewBox="0 0 256 256" width="32px" xmlns="http://www.w3.org/2000/svg">
+<path d="M213.66,82.34l-56-56A8,8,0,0,0,152,24H56A16,16,0,0,0,40,40V216a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V88A8,8,0,0,0,213.66,82.34ZM160,51.31,188.69,80H160ZM200,216H56V40h88V88a8,8,0,0,0,8,8h48V216Z"></path>
 </svg>
 </div>
-<div class="flex flex-col gap-1">
-<h3 class="text-white text-lg font-bold">Risk Identification</h3>
-<p class="text-white/60 text-sm">Proactively identify potential risks, ambiguities, and liabilities hidden in the text.</p>
+</div>
+<div></div>
 </div>
 </div>
-</div>
-</div>
+</section>
 </div>
 </main>
 </div>
