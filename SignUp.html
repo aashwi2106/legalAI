@@ -1,0 +1,85 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --checkbox-tick-svg: url('data:image/svg+xml,%3csvg viewBox=%270 0 16 16%27 fill=%27rgb(17,23,20)%27 xmlns=%27http://www.w3.org/2000/svg%27%3e%3cpath d=%27M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z%27/%3e%3c/svg%3e');
+      }
+    </style>
+</head>
+<body class="bg-[#111714]" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex size-full min-h-screen flex-col dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<main class="flex flex-1 flex-col justify-center py-16 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-md mx-auto space-y-8">
+<div class="text-center">
+<h1 class="text-4xl font-bold tracking-tight text-white">Create your account</h1>
+<p class="mt-2 text-lg text-white/60">Simplify legal jargon with the power of AI.</p>
+</div>
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium leading-6 text-white" for="fullName">Full name</label>
+<div class="mt-2">
+<input autocomplete="name" class="form-input block w-full rounded-xl border-0 bg-[#29382f] p-4 text-white placeholder:text-[#9eb7a8] focus:ring-2 focus:ring-inset focus:ring-[#38e07b] sm:text-sm sm:leading-6" id="fullName" name="fullName" placeholder="Enter your full name" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-white" for="email">Email address</label>
+<div class="mt-2">
+<input autocomplete="email" class="form-input block w-full rounded-xl border-0 bg-[#29382f] p-4 text-white placeholder:text-[#9eb7a8] focus:ring-2 focus:ring-inset focus:ring-[#38e07b] sm:text-sm sm:leading-6" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-white" for="password">Password</label>
+<div class="mt-2">
+<input autocomplete="new-password" class="form-input block w-full rounded-xl border-0 bg-[#29382f] p-4 text-white placeholder:text-[#9eb7a8] focus:ring-2 focus:ring-inset focus:ring-[#38e07b] sm:text-sm sm:leading-6" id="password" name="password" placeholder="Enter your password" required="" type="password"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium leading-6 text-white" for="confirm-password">Confirm password</label>
+<div class="mt-2">
+<input autocomplete="new-password" class="form-input block w-full rounded-xl border-0 bg-[#29382f] p-4 text-white placeholder:text-[#9eb7a8] focus:ring-2 focus:ring-inset focus:ring-[#38e07b] sm:text-sm sm:leading-6" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required="" type="password"/>
+</div>
+<p class="mt-2 text-sm text-red-500 hidden">Passwords do not match.</p>
+</div>
+<div class="flex items-center">
+<input class="h-4 w-4 rounded border-[#3d5245] bg-transparent text-[#38e07b] checked:bg-[#38e07b] checked:border-[#38e07b] checked:bg-[image:--checkbox-tick-svg] focus:ring-[#38e07b] focus:ring-offset-0" id="terms-and-conditions" name="terms-and-conditions" type="checkbox"/>
+<label class="ml-3 block text-sm leading-6 text-white" for="terms-and-conditions">
+                  I agree to the <a class="font-medium text-[#38e07b] hover:text-[#2fe678]" href="/terms">Terms and Conditions</a>
+</label>
+</div>
+<div>
+<button class="flex w-full justify-center rounded-full bg-[#38e07b] px-4 py-3 text-sm font-bold leading-6 text-[#111714] shadow-sm hover:bg-[#2fe678] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#38e07b] transition-colors" type="submit">
+                  Sign up
+                </button>
+</div>
+</form>
+<div class="relative">
+<div aria-hidden="true" class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-[#29382f]"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="bg-[#111714] px-2 text-[#9eb7a8]">Or sign up with</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="flex w-full items-center justify-center gap-3 rounded-full bg-[#29382f] px-4 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#3d5245] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#29382f] transition-colors">
+<span class="truncate">Facebook</span>
+</button>
+<button class="flex w-full items-center justify-center gap-3 rounded-full bg-[#29382f] px-4 py-3 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-[#3d5245] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#29382f] transition-colors">
+<span class="truncate">LinkedIn</span>
+</button>
+</div>
+<p class="text-center text-sm text-[#9eb7a8]">
+              Already have an account?
+              <a class="font-semibold leading-6 text-[#38e07b] hover:text-[#2fe678]" href="/login">Log in</a>
+</p>
+</div>
+</main>
+</div>
+</div>
+</body></html>
